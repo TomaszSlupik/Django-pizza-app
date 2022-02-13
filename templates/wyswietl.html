@@ -1,0 +1,35 @@
+{% extends 'glowny.html' %}
+{% block tytul %} Składanie zamówienia {% endblock %}
+
+{% block strona %}
+
+<b><h2><span style="color: white">Proszę podać swoje dane do zamówienia:</span></h2></b>
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"><span style="color: white">Email</span></label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"><span style="color: white">Imię i Naziwsko</span></label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+
+  <div class="col-6">
+    <label for="inputAddress" class="form-label"><span style="color: white">Adres</span></label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+
+  <div class="col-md-5">
+    <label for="inputCity" class="form-label"><span style="color: white">Miasto</span></label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+
+  </div>
+
+  <div class="col-12">
+     <a href="pizza/"><h2><b>Finalizacja<i class="fas fa-shopping-cart"></i></b></h2></a>
+  </div>
+</form>
+
+
+{% endblock %}

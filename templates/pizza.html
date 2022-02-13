@@ -1,0 +1,27 @@
+
+{% extends 'glowny.html' %}
+{% block tytul %} Nasze menu {% endblock %}
+
+{% block strona %}
+
+<p style="padding-left: 3cm">
+
+<h2><b><span style="color: white">Nasze menu <i class="fas fa-utensils"></i> </span><b><span style="color: white"><i class="fas fa-pizza-slice"></i></span></b></b></h2>
+
+
+
+        {% for p in pizza %}
+
+            <p><div class="card border-primary mb-3"  style="max-width: 18rem;"> </p>
+
+              <div class="card-header"><b>{{ p.nazwa }} ({{ p.cena }} zł)</b></b></div>
+              <div class="card-body text-dark">
+
+                <h5 class="card-title"><p>{{ p.skladniki }}</p></h5>
+                    <img src="/media/{{ p.zdjecie }}" width="200" height="240">
+                <p></p><a href="wyswietl">Złóż zamówienie <i class="fas fa-sign-in-alt"></i></a></p>
+              </div>
+            </div>
+</p>
+    {% endfor %}
+{% endblock %}
